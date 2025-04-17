@@ -1,0 +1,62 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #1e1e2f, #2a2a4a);
+  --text-color: #ffffff;
+  --primary-color: #8b5cf6; /* Vibrant purple */
+  --secondary-color: #22d3ee; /* Cyan */
+  --button-bg: #4f46e5;
+  --button-hover-bg: #4338ca;
+  --border-radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-gradient); /* Apply gradient background */
+  color: var(--text-color); /* Use light text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color); /* Vibrant purple for headings */
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8); /* Slightly muted white for text */
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+a {
+  color: var(--secondary-color); /* Cyan for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
